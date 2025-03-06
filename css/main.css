@@ -16,7 +16,7 @@ header {
 /* Ensure the header image fits properly */
 .header-image {
     width: 100%;
-    height: 300px; /* Increased height for better proportion */
+    height: auto; /* Increased height for better proportion */
     object-fit: cover;
 }
 
@@ -38,15 +38,15 @@ nav {
     background-color: #c4dfda; /* Light teal like the mockup */
     padding: 15px;
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
-/* Remove bullet points and space items evenly */
+/* Make navigation inline */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -55,6 +55,7 @@ nav ul li {
     font-size: 1.2rem;
     font-weight: bold;
     position: relative;
+    display: inline;
 }
 
 /* Add dividers between navigation items */
